@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20140627000042) do
     t.integer  "post_id"
     t.text     "post"
     t.datetime "created_at"
+    t.integer  "user_id"
   end
 
   create_table "profiles", force: true do |t|
@@ -26,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140627000042) do
     t.string   "country"
     t.datetime "created_at"
     t.integer  "user_id"
+    t.string   "password"
   end
 
   create_table "users", force: true do |t|

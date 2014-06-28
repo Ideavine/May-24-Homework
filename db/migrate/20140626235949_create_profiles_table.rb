@@ -7,6 +7,7 @@ class CreateProfilesTable < ActiveRecord::Migration
   		t.string :country
   		t.datetime :created_at
   		t.integer :user_id
+      t.string :password
   	end
   end
 end
