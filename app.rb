@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 
-configure(development){set :database, "sqlite3:test.sqlite3"}
+configure(:development){set :database, "sqlite3:test.sqlite3"}
 
 require './models'
 
@@ -11,6 +11,7 @@ end
 
 get '/home' do
 	"Register Here"
+	erb :home
 end
 
 
