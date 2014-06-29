@@ -18,6 +18,15 @@ belongs_to :user
 has_one :profile
 end
 
+class Followers < ActiveRecord::Base 
+belongs_to :user
+end
+
+class UsersFollowers < ActiveRecord::Base 
+belongs_to :user
+has_many :user
+end
+
 #WORK ON ADDING ALL THE ASSOCIATIONS
 #THEN CREATE RECORDS IN EACH
 #THEN ASSOCIATE A SPECIFIC ROOM WITH USERS 

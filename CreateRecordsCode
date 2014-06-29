@@ -2,3 +2,5 @@ Post.new(post_id:, post: "Dreamcatcher synth tattooed chambray aesthetic. Tonx m
 
 Profile.new(profile_name:"coderoni", city:"Brooklyn", state:"NY", country:"USA", user_id:2)
 
+Follower.new(follower_id: 1, user_id: 1, post_id: 1)
+
