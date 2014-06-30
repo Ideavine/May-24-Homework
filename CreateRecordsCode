@@ -1,6 +1,4 @@
-Post.new(post_id:, post: "Dreamcatcher synth tattooed chambray aesthetic. Tonx meggings cardigan farm-to-table dreamcatcher Carles craft beer, forage tote bag. Forage umami Wes Anderson ugh, Blue Bottle pork belly synth biodiesel flexitarian letterpress beard vinyl paleo disrupt. Polaroid keytar yr Tonx brunch wolf hoodie. Disrupt distillery aesthetic, gluten-free occupy vegan try-hard post-ironic Tumblr Neutra cornhole lomo. Hella iPhone biodiesel messenger bag, High Life before they sold out chillwave Banksy art party trust fund +1 sustainable Neutra gluten-free. Quinoa tattooed blog banh mi.", created_at: time.now)
+Post.new(post_id:2, post:"Dreamcatcher synth tattooed chambray aesthetic. Tonx meggings cardigan farm-to-table dreamcatcher Carles craft beer, forage tote bag. Forage umami Wes Anderson ugh, Blue Bottle pork belly synth biodiesel flexitarian letterpress beard vinyl paleo disrupt. Polaroid keytar yr Tonx brunch wolf hoodie. Disrupt distillery aesthetic, gluten-free occupy vegan try-hard post-ironic Tumblr Neutra cornhole lomo. Hella iPhone biodiesel messenger bag, High Life before they sold out chillwave Banksy art party trust fund +1 sustainable Neutra gluten-free. Quinoa tattooed blog banh mi", created_at: "time.now")
 
 Profile.new(profile_name:"coderoni", city:"Brooklyn", state:"NY", country:"USA", user_id:2)
-
-Follower.new(follower_id: 1, user_id: 1, post_id: 1)
 
