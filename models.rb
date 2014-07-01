@@ -27,6 +27,11 @@ belongs_to :user
 has_many :user
 end
 
+# class UsersController < ApplicationController   
+#     def create
+#         @user = User.create(params[:user])
+
+        
 #WORK ON ADDING ALL THE ASSOCIATIONS
 #THEN CREATE RECORDS IN EACH
 #THEN ASSOCIATE A SPECIFIC ROOM WITH USERS 

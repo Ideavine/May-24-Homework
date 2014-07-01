@@ -5,6 +5,8 @@ gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 
+gem 'rack-flash'
+
 
 
 gem 'rake'
