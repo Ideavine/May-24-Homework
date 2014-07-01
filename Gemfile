@@ -4,11 +4,7 @@ ruby '2.0.0'
 gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
-
 gem 'rack-flash3'
-
-
-
 gem 'rake'
 
 group :development do 
