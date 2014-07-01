@@ -37,21 +37,21 @@ end
 
 post '/sign-in' do
      @user = User.where(username: params[:username])
-     @password = Password.where(password: params[:password])
-	if @user.password == params[:password]
+     #@password = Password.where(password: params[:password])
+	#if @user.password == params[:password]
        redirect “/posts”
        erb :posts
-     else
-     	redirect "/login-unsuccessful"
-  #      flash[:alert] = "Whammy! Invalid username and/or password"
-  #   if @user.empty?
-  #   flash[:alert] = "Sorry, that user doesn't exist. Feel free to sign up."
-  #   session[:user_id] = @user.first.id
-  #   redirect '/sign_up'
-  # else
-  #   flash[:notice] = "You've successfully signed in."
-  #   redirect '/'
-	  end
+  #    else
+  #    	redirect "/login-unsuccessful"
+  # #      flash[:alert] = "Whammy! Invalid username and/or password"
+  # #   if @user.empty?
+  # #   flash[:alert] = "Sorry, that user doesn't exist. Feel free to sign up."
+  # #   session[:user_id] = @user.first.id
+  # #   redirect '/sign_up'
+  # # else
+  # #   flash[:notice] = "You've successfully signed in."
+  # #   redirect '/'
+	 #  end
 	  end
 
 post '/posts' do

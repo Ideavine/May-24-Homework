@@ -20,7 +20,7 @@ GEM
     json (1.8.1)
     minitest (5.3.5)
     rack (1.5.2)
-    rack-flash (0.1.2)
+    rack-flash3 (1.0.5)
       rack
     rack-protection (1.5.3)
       rack
@@ -43,7 +43,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  rack-flash
+  rack-flash3
   rake
   sinatra
   sinatra-activerecord
