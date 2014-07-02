@@ -26,34 +26,13 @@ end
 
 post '/sign-up' do
      @user = User.create(params[:user])
-	erb :posts
+	erb :users_area
 end
 
 #The following code *should* take the info entered in the form on home.erb and create a user record in the database that can be used to sign in/out (create a session).
 #The following code should lookup user/password combos and redirect to posts.erb if successful. 
 
 post '/sign-in' do
-#     @username = params[:user][:username]
-#     @password = params[:user][:password]
-#   if @user.password == params[:password]
-#         redirect “/posts”
-
-#  #erb :posts
-#    else
-#      	redirect "/login-unsuccessful"
-#  #       flash[:alert] = "Whammy! Invalid username and/or password"
-#  #    if @user.empty?
-#  #    flash[:alert] = "Sorry, that user doesn't exist. Feel free to sign up."
-#  #    session[:user_id] = @user.first.id
-#  #    redirect '/sign_up'
-#  #  else
-#  #    flash[:notice] = "You've successfully signed in."
-#  #    redirect '/'
-# 	#   end
-#  #  end
-# end
-
-
   #check that the user's password is correct
   # params
   # {user: {username: "zachfeldmna", password: "pass"}}
@@ -70,6 +49,22 @@ post '/sign-in' do
 end
   #if so, sign them in
 
+def current_user
+     if session[:user_id]
+       @current_user = User.find(session[:user_id])
+     end
+   end
+
+get '/signout' do
+    session.clear
+    flash[:notice] = "You were logged out successfully."
+end
+
+# post '/signout' do
+#   @current_user = User_id.destroy(params[:user_id])
+#      flash[:notice] = "You were logged out successfully."
+#      redirect "/home"
+# end
 
 post '/posts' do
 	@post = Post.new(params[:post])
@@ -77,7 +72,7 @@ post '/posts' do
 end
 
 post '/posts/follow' do
-@post = Post.new(title: params[:title], text: params[:text])
+  @post = Post.new(title: params[:title], text: params[:text])
 end
 
 # helpers do
@@ -89,10 +84,7 @@ end
 #   end
 # end
 
-# def current_user
-#      if session[:user_id]
-#        @current_user = User.find(session[:user_id)
-#      end
+
 
 
 

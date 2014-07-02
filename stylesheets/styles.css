@@ -7,3 +7,22 @@ body {
 	margin: 20px;
 	padding: 0;
 }
+
+.nav {
+	display: inline;
+	margin: 5px; 
+	list-style: none;
+	float: right;
+	font-family: courier;
+	line-height: 7px;
+	background-color: #FF8600;
+	border-radius: 5px;
+	padding: 5px 20px 5px 10px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.nav li	{
+	display: inline;
+	padding: 10px;
+	}
