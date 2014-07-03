@@ -1,0 +1,6 @@
+Post.create(post_title: "Austin", post:"Kitsch synth cliche, meggings Austin hashtag tofu church-key Marfa. Hoodie Etsy XOXO, literally cred semiotics cardigan hella beard viral pug irony VHS. Synth disrupt stumptown DIY scenester. Forage fingerstache kitsch flannel Helvetica. Banh mi actually Brooklyn, American Apparel pork belly direct trade Tumblr narwhal salvia gluten-free typewriter readymade 90's. Banjo raw denim fap ugh Godard. Pitchfork wolf Schlitz Tumblr sustainable Marfa, literally synth pork belly master cleanse.", created_at: "time.now")
+
+Profile.create(username:"coderoni", city:"Brooklyn", state:"NY", country:"USA", user_id:1)
+
+User.new(username:"vdooley", password:"london", email:"vcdooley@gmail.com", fname:"Virginia", lname:"Dooley", created_at:DateTime.now)
+

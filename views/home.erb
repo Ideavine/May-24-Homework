@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Hello, World! Welcome to my MicroBlog
+    </title>
+    <link href="/stylesheets/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- should all these labels below correspond to columns in the migration tables?  -->
+    <h2>Sign up</h2>
+    <form method="POST" action="/sign-up">
+      <label for="[user]username">Username</label>
+      <input type="username" name="[user]username">
+      <label for="[user]password">Password</label>
+      <input type="password" name="[user]password">
+      <label for="[user]fname">First Name</label>
+      <input type="fname" name="[user]fname">
+      <label for="[user]lname">Last Name</label>
+      <input type="lname" name="[user]lname">
+      <label for="[user]email">Email</label>
+      <input type="email" name="[user]email">
+      <input type="submit">
+    </form>
+    <p>
+    </p>
+  <h2>Sign in</h2>
+      <form method="POST" action="/sign-in">
+      <label for="[user]username">Username</label>
+      <input type="text" name="[user]username">
+      <label for="[user]password">Password</label>
+      <input type="password" name="[user]password">
+      <input type="submit">
+      </form>
+   <h2>Sign out</h2>
+   <form method="GET" action="/signout">
+      <input type="submit">
+      </form>
+    </body>
+</html>
