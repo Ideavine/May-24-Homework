@@ -83,21 +83,23 @@ end
 #     erb :user_area
 # end
 
-get '/new' do
-  # get the latest 10 posts
-  @posts = Post.all(:order => [ :id.desc ], :limit => 10)
-  erb :new
-end
+
 
 post "/posts/new" do
   @post = Post.new(params[:post])
   if @post.save
      flash[:notice] = "Your post was created."
-     redirect "/posts/new"
+     redirect "/new"
      erb :new
   else
     erb :user_area
   end
+end
+
+get '/new' do
+  # get the latest 10 posts
+  @posts = Post.all
+  erb :new
 end
 
 

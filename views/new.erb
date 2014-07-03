@@ -9,9 +9,7 @@
   </head>
   <body>
 	<!-- should I use a helper method here? I dont really understand how they work. -->
-	<% @posts.each do |post| %>
-	  <h3><%= post.post_title %></h3>
-	  <p><%= post.post %></p>
+	<%= Posts.all %>
 	<% end %>
 
 
