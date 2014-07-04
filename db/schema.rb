@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140629005529) do
     t.text     "post"
     t.datetime "created_at"
     t.integer  "user_id"
+
     t.string   "post_title"
   end
 
