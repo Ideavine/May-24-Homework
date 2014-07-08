@@ -26,6 +26,7 @@ get '/posts' do
 end
 
 get '/new' do
+  @posts = Post.all
   erb :new
 end
 
